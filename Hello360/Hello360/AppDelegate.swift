@@ -19,10 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let options = D360Options(appId: "", apiKey: "")
+        let options = D360Options(appId: "10", apiKey: "000000000000")
         D360.start(withOptions: options)
         
-        UNUserNotificationCenter.current().delegate = self
+        if #available(iOS 10, *) {
+            UNUserNotificationCenter.current().delegate = self
+        }
+        
+        D360.setLogLevel(.debug)
         
         return true
     }
@@ -52,14 +56,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 // MARK: User Notifications
+@available(iOS 10, *)
 extension AppDelegate: UNUserNotificationCenterDelegate {
+    
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
         D360.push().handle(center, didReceive: response, withCompletionHandler: completionHandler)
     }
-    
+
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        
+
         D360.push().handle(center, willPresent: notification, withCompletionHandler: completionHandler)
     }
 }

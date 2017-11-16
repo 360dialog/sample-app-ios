@@ -306,7 +306,7 @@
 				DEVELOPMENT_TEAM = 9TDNRBR9AF;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Hello360/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,7 +323,7 @@
 				DEVELOPMENT_TEAM = 9TDNRBR9AF;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Hello360/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
