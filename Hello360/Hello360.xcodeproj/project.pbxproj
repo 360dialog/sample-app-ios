@@ -12,7 +12,23 @@
 		8A3D64E61FBB0346008D87C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E41FBB0346008D87C5 /* Main.storyboard */; };
 		8A3D64E81FBB0346008D87C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E71FBB0346008D87C5 /* Assets.xcassets */; };
 		8A3D64EB1FBB0346008D87C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E91FBB0346008D87C5 /* LaunchScreen.storyboard */; };
+		8A9B7E951FBD850F00DCC2B5 /* D360Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B7E941FBD84FE00DCC2B5 /* D360Kit.framework */; };
+		8A9B7E961FBD850F00DCC2B5 /* D360Kit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B7E941FBD84FE00DCC2B5 /* D360Kit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AEDE8781FBD84A8007BEDCE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A9B7E961FBD850F00DCC2B5 /* D360Kit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8A3D64DD1FBB0346008D87C5 /* Hello360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello360.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		8A3D64E71FBB0346008D87C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3D64EA1FBB0346008D87C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A3D64EC1FBB0346008D87C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9B7E941FBD84FE00DCC2B5 /* D360Kit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360Kit.framework; path = Carthage/Build/iOS/D360Kit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9B7E951FBD850F00DCC2B5 /* D360Kit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				8A3D64DF1FBB0346008D87C5 /* Hello360 */,
+				8AEDE8791FBD84B4007BEDCE /* Frameworks */,
 				8A3D64DE1FBB0346008D87C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +83,14 @@
 			path = Hello360;
 			sourceTree = "<group>";
 		};
+		8AEDE8791FBD84B4007BEDCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A9B7E941FBD84FE00DCC2B5 /* D360Kit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +101,7 @@
 				8A3D64D91FBB0346008D87C5 /* Sources */,
 				8A3D64DA1FBB0346008D87C5 /* Frameworks */,
 				8A3D64DB1FBB0346008D87C5 /* Resources */,
+				8AEDE8781FBD84A8007BEDCE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +306,7 @@
 				DEVELOPMENT_TEAM = 9TDNRBR9AF;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Hello360/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +323,7 @@
 				DEVELOPMENT_TEAM = 9TDNRBR9AF;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Hello360/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
