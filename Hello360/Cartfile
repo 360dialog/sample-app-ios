@@ -1,0 +1,3 @@
+
+# Cartfile
+github "360dialog/sdk-ios" ~> 3.8

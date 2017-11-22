@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UNUserNotificationCenter.current().delegate = self
         }
         
-        D360.setLogLevel(.debug)
+        D360.setLogLevel(.info)
         
         return true
     }
