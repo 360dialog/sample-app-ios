@@ -8,12 +8,15 @@ They are currently written for iOS in both Swift and Objective-C.
 
 1. Clone or download the repository
 
-2. The sample app uses [Carthage](https://github.com/Carthage/Carthage) for the SDK integration so from the root folder run 
+2. The sample app uses [Carthage](https://github.com/Carthage/Carthage) for the SDK integration so from the root folder run:
 
 ```bash
 cd Hello360
 carthage update --use-ssh --platform iOS 
 ```
+
+### Rich Notification
+The `NotificationService` shows how to integrate the [rich notifications](https://developer.360dialog.io/mobile/apple/push_notification.html#rich-notifications-setup)
 
 ### Inbox Service
 

@@ -18,9 +18,44 @@
 		8A5B1F211FC5850F00252633 /* ViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B1F201FC5850F00252633 /* ViewController+Helpers.swift */; };
 		8A5B1F241FC5876F00252633 /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B1F231FC5876F00252633 /* InboxTableViewCell.swift */; };
 		8A5B1F291FC5889A00252633 /* InboxBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B1F281FC5889A00252633 /* InboxBarViewController.swift */; };
+		8A8E92701FC5C6A900CA15F2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8E926F1FC5C6A900CA15F2 /* NotificationService.swift */; };
+		8A8E92741FC5C6A900CA15F2 /* RichNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A8E926D1FC5C6A900CA15F2 /* RichNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AAF96441FC5D8140027B42B /* D360KitExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7390331FC5D5CE005AEB02 /* D360KitExtension.framework */; };
+		8AAF96471FC5D8740027B42B /* D360KitExtension.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A7390331FC5D5CE005AEB02 /* D360KitExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8A8E92721FC5C6A900CA15F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A3D64D51FBB0346008D87C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A8E926C1FC5C6A900CA15F2;
+			remoteInfo = RichNotificationExtension;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		8A8E92781FC5C6A900CA15F2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A8E92741FC5C6A900CA15F2 /* RichNotificationExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AAF96461FC5D8690027B42B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8AAF96471FC5D8740027B42B /* D360KitExtension.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AEDE8781FBD84A8007BEDCE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,6 +83,10 @@
 		8A5B1F231FC5876F00252633 /* InboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
 		8A5B1F281FC5889A00252633 /* InboxBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxBarViewController.swift; sourceTree = "<group>"; };
 		8A5B1F2A1FC58DA400252633 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		8A7390331FC5D5CE005AEB02 /* D360KitExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360KitExtension.framework; path = Carthage/Build/iOS/D360KitExtension.framework; sourceTree = SOURCE_ROOT; };
+		8A8E926D1FC5C6A900CA15F2 /* RichNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RichNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8E926F1FC5C6A900CA15F2 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8A8E92711FC5C6A900CA15F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9B7E971FBD8EDB00DCC2B5 /* Hello360.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello360.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +99,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A8E926A1FC5C6A900CA15F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AAF96441FC5D8140027B42B /* D360KitExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				8A3D64DF1FBB0346008D87C5 /* Hello360 */,
+				8A8E926E1FC5C6A900CA15F2 /* RichNotificationExtension */,
 				8A5B1F1C1FC57FA500252633 /* Frameworks */,
 				8A3D64DE1FBB0346008D87C5 /* Products */,
 				8A5B1F2A1FC58DA400252633 /* Cartfile */,
@@ -77,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				8A3D64DD1FBB0346008D87C5 /* Hello360.app */,
+				8A8E926D1FC5C6A900CA15F2 /* RichNotificationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +147,7 @@
 		8A5B1F1C1FC57FA500252633 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A7390331FC5D5CE005AEB02 /* D360KitExtension.framework */,
 				8A5B1F1D1FC57FB700252633 /* D360Kit.framework */,
 			);
 			path = Frameworks;
@@ -139,6 +189,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		8A8E926E1FC5C6A900CA15F2 /* RichNotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8A8E926F1FC5C6A900CA15F2 /* NotificationService.swift */,
+				8A8E92711FC5C6A900CA15F2 /* Info.plist */,
+			);
+			path = RichNotificationExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,15 +209,35 @@
 				8A3D64DA1FBB0346008D87C5 /* Frameworks */,
 				8A3D64DB1FBB0346008D87C5 /* Resources */,
 				8AEDE8781FBD84A8007BEDCE /* Embed Frameworks */,
+				8A8E92781FC5C6A900CA15F2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8A8E92731FC5C6A900CA15F2 /* PBXTargetDependency */,
 			);
 			name = Hello360;
 			productName = Hello360;
 			productReference = 8A3D64DD1FBB0346008D87C5 /* Hello360.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8A8E926C1FC5C6A900CA15F2 /* RichNotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A8E92771FC5C6A900CA15F2 /* Build configuration list for PBXNativeTarget "RichNotificationExtension" */;
+			buildPhases = (
+				8A8E92691FC5C6A900CA15F2 /* Sources */,
+				8A8E926A1FC5C6A900CA15F2 /* Frameworks */,
+				8A8E926B1FC5C6A900CA15F2 /* Resources */,
+				8AAF96461FC5D8690027B42B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichNotificationExtension;
+			productName = RichNotificationExtension;
+			productReference = 8A8E926D1FC5C6A900CA15F2 /* RichNotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -182,6 +261,10 @@
 							};
 						};
 					};
+					8A8E926C1FC5C6A900CA15F2 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 8A3D64D81FBB0346008D87C5 /* Build configuration list for PBXProject "Hello360" */;
@@ -198,6 +281,7 @@
 			projectRoot = "";
 			targets = (
 				8A3D64DC1FBB0346008D87C5 /* Hello360 */,
+				8A8E926C1FC5C6A900CA15F2 /* RichNotificationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +294,13 @@
 				8A3D64EB1FBB0346008D87C5 /* LaunchScreen.storyboard in Resources */,
 				8A3D64E81FBB0346008D87C5 /* Assets.xcassets in Resources */,
 				8A3D64E61FBB0346008D87C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A8E926B1FC5C6A900CA15F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +320,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A8E92691FC5C6A900CA15F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A8E92701FC5C6A900CA15F2 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A8E92731FC5C6A900CA15F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A8E926C1FC5C6A900CA15F2 /* RichNotificationExtension */;
+			targetProxy = 8A8E92721FC5C6A900CA15F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8A3D64E41FBB0346008D87C5 /* Main.storyboard */ = {
@@ -361,6 +468,7 @@
 		8A3D64F01FBB0346008D87C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hello360/Hello360.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +487,7 @@
 		8A3D64F11FBB0346008D87C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hello360/Hello360.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,6 +498,46 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A8E92751FC5C6A900CA15F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TDNRBR9AF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RichNotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360.RichNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A8E92761FC5C6A900CA15F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TDNRBR9AF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RichNotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360.RichNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,6 +560,15 @@
 			buildConfigurations = (
 				8A3D64F01FBB0346008D87C5 /* Debug */,
 				8A3D64F11FBB0346008D87C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A8E92771FC5C6A900CA15F2 /* Build configuration list for PBXNativeTarget "RichNotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8E92751FC5C6A900CA15F2 /* Debug */,
+				8A8E92761FC5C6A900CA15F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
