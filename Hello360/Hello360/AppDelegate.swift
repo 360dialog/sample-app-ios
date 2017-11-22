@@ -19,7 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let options = D360Options(appId: "10", apiKey: "000000000000")
+        // Those are sample credentials for test purpose. You can get your by loging in to https://dashboard.360dialog.com/apps/
+        let options = D360Options(appId: "213", apiKey: "8e82138de17f708c544173ae1463a6f61eb7133aaec80113c7941e26ce0dfeed")
+        
+        // You can customise furhter the SDK using the option object.
+        options.sessionBackgroundTimeout = 60
+        
         D360.start(withOptions: options)
         
         if #available(iOS 10, *) {
