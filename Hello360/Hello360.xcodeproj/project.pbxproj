@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8A3D64E11FBB0346008D87C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */; };
-		8A3D64E31FBB0346008D87C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E21FBB0346008D87C5 /* ViewController.swift */; };
+		8A3D64E31FBB0346008D87C5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */; };
 		8A3D64E61FBB0346008D87C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E41FBB0346008D87C5 /* Main.storyboard */; };
 		8A3D64E81FBB0346008D87C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E71FBB0346008D87C5 /* Assets.xcassets */; };
 		8A3D64EB1FBB0346008D87C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E91FBB0346008D87C5 /* LaunchScreen.storyboard */; };
-		8A9B7E951FBD850F00DCC2B5 /* D360Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B7E941FBD84FE00DCC2B5 /* D360Kit.framework */; };
-		8A9B7E961FBD850F00DCC2B5 /* D360Kit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B7E941FBD84FE00DCC2B5 /* D360Kit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A5B1F1E1FC57FBF00252633 /* D360Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5B1F1D1FC57FB700252633 /* D360Kit.framework */; };
+		8A5B1F1F1FC57FBF00252633 /* D360Kit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5B1F1D1FC57FB700252633 /* D360Kit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8A9B7E961FBD850F00DCC2B5 /* D360Kit.framework in Embed Frameworks */,
+				8A5B1F1F1FC57FBF00252633 /* D360Kit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,12 +33,12 @@
 /* Begin PBXFileReference section */
 		8A3D64DD1FBB0346008D87C5 /* Hello360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A3D64E21FBB0346008D87C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		8A3D64E51FBB0346008D87C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A3D64E71FBB0346008D87C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3D64EA1FBB0346008D87C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A3D64EC1FBB0346008D87C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A9B7E941FBD84FE00DCC2B5 /* D360Kit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360Kit.framework; path = Carthage/Build/iOS/D360Kit.framework; sourceTree = SOURCE_ROOT; };
+		8A5B1F1D1FC57FB700252633 /* D360Kit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360Kit.framework; path = Carthage/Build/iOS/D360Kit.framework; sourceTree = SOURCE_ROOT; };
 		8A9B7E971FBD8EDB00DCC2B5 /* Hello360.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello360.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9B7E951FBD850F00DCC2B5 /* D360Kit.framework in Frameworks */,
+				8A5B1F1E1FC57FBF00252633 /* D360Kit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				8A3D64DF1FBB0346008D87C5 /* Hello360 */,
-				8AEDE8791FBD84B4007BEDCE /* Frameworks */,
+				8A5B1F1C1FC57FA500252633 /* Frameworks */,
 				8A3D64DE1FBB0346008D87C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +76,7 @@
 			children = (
 				8A9B7E971FBD8EDB00DCC2B5 /* Hello360.entitlements */,
 				8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */,
-				8A3D64E21FBB0346008D87C5 /* ViewController.swift */,
+				8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */,
 				8A3D64E41FBB0346008D87C5 /* Main.storyboard */,
 				8A3D64E71FBB0346008D87C5 /* Assets.xcassets */,
 				8A3D64E91FBB0346008D87C5 /* LaunchScreen.storyboard */,
@@ -85,10 +85,10 @@
 			path = Hello360;
 			sourceTree = "<group>";
 		};
-		8AEDE8791FBD84B4007BEDCE /* Frameworks */ = {
+		8A5B1F1C1FC57FA500252633 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8A9B7E941FBD84FE00DCC2B5 /* D360Kit.framework */,
+				8A5B1F1D1FC57FB700252633 /* D360Kit.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A3D64E31FBB0346008D87C5 /* ViewController.swift in Sources */,
+				8A3D64E31FBB0346008D87C5 /* InboxViewController.swift in Sources */,
 				8A3D64E11FBB0346008D87C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
