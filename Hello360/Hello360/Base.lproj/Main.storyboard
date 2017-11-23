@@ -40,7 +40,7 @@
                                                     <segment title="Deleted"/>
                                                     <segment title="Inbox"/>
                                                 </segments>
-                                                <color key="tintColor" red="0.23921568630000001" green="0.56078431370000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.25098039215686274" green="0.55686274509803924" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="filterStateChangedWithSender:" destination="9v1-IR-O5w" eventType="valueChanged" id="bd4-5x-cmi"/>
                                                 </connections>
@@ -52,7 +52,7 @@
                                                     <segment title="Read"/>
                                                     <segment title="Unread"/>
                                                 </segments>
-                                                <color key="tintColor" red="0.23921568630000001" green="0.56078431370000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.25098039215686274" green="0.55686274509803924" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="filterStateChangedWithSender:" destination="9v1-IR-O5w" eventType="valueChanged" id="D46-gb-7fh"/>
                                                 </connections>
@@ -96,12 +96,17 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="rbO-Lw-hZc">
                                                     <rect key="frame" x="10" y="5" width="355" height="50"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4e2-Pg-uO3">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4e2-Pg-uO3">
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="50" id="ga7-b8-JVY"/>
                                                                 <constraint firstAttribute="height" constant="50" id="uYs-cf-HdQ"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="25"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LeM-Va-HZ7">
                                                             <rect key="frame" x="61" y="7" width="294" height="36"/>

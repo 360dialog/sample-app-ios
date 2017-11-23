@@ -15,7 +15,7 @@ extension UIColor {
     
     class var d360_blue: UIColor {
         get {
-            return UIColor(hexString: "#2F7AF5")!
+            return UIColor(hexString: "#408EFC")!
         }
     }
     

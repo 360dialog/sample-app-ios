@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         D360.setLogLevel(.info)
         
+        applyStyle()
         return true
     }
     
@@ -73,6 +74,18 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
 
         D360.push().handle(center, willPresent: notification, withCompletionHandler: completionHandler)
+    }
+}
+
+// MARK: Style
+extension AppDelegate {
+    func applyStyle() {
+        
+        let navBarAppearance = UINavigationBar.appearance()
+        navBarAppearance.isTranslucent = false
+        navBarAppearance.barTintColor = .d360_blue
+        navBarAppearance.tintColor = .white
+        navBarAppearance.titleTextAttributes = [ NSAttributedStringKey.foregroundColor: UIColor.white ]
     }
 }
 
