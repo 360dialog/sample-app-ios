@@ -11,7 +11,7 @@
       "p": {
         "t": "html",
         "d": {
-          "u": "https://inapp-samples.s3.amazonaws.com/push-permissions.html",
+          "u": "https://inapp-samples.s3-eu-west-1.amazonaws.com/inapp-pagination.html",
           "preload": "true",
           "b": {
             "s": "dark"

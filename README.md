@@ -1,8 +1,7 @@
 
-# 360dialog Sample Apps
-These samples are minimal examples demonstrating a proper integration of the 360dialog SDK
+# 360dialog Sample App
 
-They are currently written for iOS in both Swift and Objective-C.
+This sample app is a minimal example demonstrating a proper integration of the 360dialog SDK. 
 
 ## Installation
 
@@ -23,7 +22,15 @@ The `NotificationService` shows how to integrate the [rich notifications](https:
 The `InboxViewController` demonstrates the integration of the Inbox Service where the user can read, update and delete the received Inbox Messages
 
 
+## Campaing Tester
+
+
+This project also contains and uses a `D360TesterKit` to simulate the 360dialog campaings for testing or demonstration purposes. Please note that this framework is not inteded for production use and its sole purpose is to simulate the campaigns within this sample app.
+
+You are free to experiment with it to try different campaigns. Refer to its [README](D360TesterKit/README.md) for more example.
  
 ## Resources
 
 For more detailed explenation, we enourage you to read the [Developer portal](https://developer.360dialog.io/mobile/apple/sdk_setup.html?ios)
+
+
