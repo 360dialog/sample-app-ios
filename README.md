@@ -22,7 +22,7 @@ The `NotificationService` shows how to integrate the [rich notifications](https:
 The `InboxViewController` demonstrates the integration of the Inbox Service where the user can read, update and delete the received Inbox Messages
 
 
-## Campaing Tester
+## Campaign Tester
 
 
 This project also contains and uses a `D360TesterKit` to simulate the 360dialog campaings for testing or demonstration purposes. Please note that this framework is not inteded for production use and its sole purpose is to simulate the campaigns within this sample app.
