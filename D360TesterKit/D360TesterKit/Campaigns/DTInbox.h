@@ -14,7 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *body;
 
-@property (nonatomic, copy) NSURL *attachmentURL;
+@property (nonatomic, strong) NSURL *attachmentURL;
+
+- (instancetype)initWithTitle:(NSString *)title body:(nullable NSString *)body;
+
 @end
 
 NS_ASSUME_NONNULL_END

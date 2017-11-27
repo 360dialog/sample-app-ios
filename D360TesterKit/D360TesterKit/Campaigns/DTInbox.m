@@ -34,6 +34,18 @@
     return self;
 }
 
+- (instancetype)initWithTitle:(NSString *)title body:(NSString *)body
+{
+    self = [self init];
+    if (self) {
+        self.title = title;
+        self.body = body;
+    }
+
+    return self;
+}
+
+
 #pragma mark - Overrides
 
 - (void)setTitle:(NSString *)title

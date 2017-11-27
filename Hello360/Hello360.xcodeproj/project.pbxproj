@@ -22,6 +22,7 @@
 		8A8E92741FC5C6A900CA15F2 /* RichNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A8E926D1FC5C6A900CA15F2 /* RichNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8AAF96441FC5D8140027B42B /* D360KitExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7390331FC5D5CE005AEB02 /* D360KitExtension.framework */; };
 		8AAF96471FC5D8740027B42B /* D360KitExtension.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A7390331FC5D5CE005AEB02 /* D360KitExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8AD899401FCC546A00E7809E /* AppDelegate+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		8A8E92711FC5C6A900CA15F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9B7E971FBD8EDB00DCC2B5 /* Hello360.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello360.entitlements; sourceTree = "<group>"; };
 		8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360TesterKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Hello360-ckagwyhcijcxfkggfodnktdjtyrc/Build/Products/Debug-iphoneos/D360TesterKit.framework"; sourceTree = "<group>"; };
+		8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				8A5B1F201FC5850F00252633 /* ViewController+Helpers.swift */,
 				8A04CD851FC5B2C3004D07A5 /* UIColor+Style.swift */,
+				8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				8A3D64E31FBB0346008D87C5 /* InboxViewController.swift in Sources */,
 				8A04CD861FC5B2C3004D07A5 /* UIColor+Style.swift in Sources */,
 				8A5B1F291FC5889A00252633 /* InboxBarViewController.swift in Sources */,
+				8AD899401FCC546A00E7809E /* AppDelegate+Helpers.swift in Sources */,
 				8A5B1F211FC5850F00252633 /* ViewController+Helpers.swift in Sources */,
 				8A5B1F241FC5876F00252633 /* InboxTableViewCell.swift in Sources */,
 				8A3D64E11FBB0346008D87C5 /* AppDelegate.swift in Sources */,

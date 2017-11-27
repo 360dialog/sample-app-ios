@@ -5,6 +5,7 @@
 
 import UIKit
 import D360Kit
+import D360TesterKit
 
 class InboxViewController: UIViewController {
     
@@ -41,7 +42,8 @@ class InboxViewController: UIViewController {
     // Fetches the count of any inbox messages and updates the bottom bar
     func updateMessageCount() {
         D360.inbox().fetch(with: .any()) { messages, error in
-            self.barViewController.currentInboxCount = UInt(messages.count)
+            let count = UInt(messages.count)
+            self.barViewController.currentInboxCount = count
         }
     }
     
@@ -62,6 +64,12 @@ class InboxViewController: UIViewController {
     
     @IBAction func filterStateChanged(sender: UISegmentedControl) {
         fetchInboxWithCurrentFilter()
+    }
+    
+    @IBAction func composeButtonAction(sender: UIBarButtonItem) {
+
+        let inbox = DTInbox(title: "Hi", body: "How are you?")
+        DTTester.send(inbox)
     }
     
     // MARK:- Helpers

@@ -27,17 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UNUserNotificationCenter.current().delegate = self
         }
 
-        DTTester.send(DTInApp())
-
-        let inbox = DTInbox()
-        inbox.title = "Hello"
-        inbox.body = "How are you?"
-        DTTester.send(inbox)
-
+        D360.setLogLevel(.debug)
         
-        D360.setLogLevel(.info)
-        
+        // Not related to the 360dialog SDK integration
+
         applyStyle()
+        
+        // Samples
+        sendSampleInboxMessageIfNeeded()
         
         return true
     }
@@ -79,18 +76,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
 
         D360.push().handle(center, willPresent: notification, withCompletionHandler: completionHandler)
-    }
-}
-
-// MARK: - Style
-extension AppDelegate {
-    func applyStyle() {
-        
-        let navBarAppearance = UINavigationBar.appearance()
-        navBarAppearance.isTranslucent = false
-        navBarAppearance.barTintColor = .d360_blue
-        navBarAppearance.tintColor = .white
-        navBarAppearance.titleTextAttributes = [ NSAttributedStringKey.foregroundColor: UIColor.white ]
     }
 }
 

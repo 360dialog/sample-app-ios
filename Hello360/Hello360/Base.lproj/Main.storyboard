@@ -189,7 +189,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4aV-ey-1S2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="nag-yq-qyg"/>
+                    <navigationItem key="navigationItem" id="nag-yq-qyg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="PcT-4y-doo">
+                            <connections>
+                                <action selector="composeButtonActionWithSender:" destination="9v1-IR-O5w" id="Emq-ns-dOM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="inboxSegmentedControl" destination="7jk-CU-u8b" id="omg-Bn-8Id"/>
                         <outlet property="readSegmentedControl" destination="f4N-ot-JYC" id="I0E-YX-42C"/>
