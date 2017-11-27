@@ -88,6 +88,7 @@
 		8A8E926F1FC5C6A900CA15F2 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		8A8E92711FC5C6A900CA15F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9B7E971FBD8EDB00DCC2B5 /* Hello360.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello360.entitlements; sourceTree = "<group>"; };
+		8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360TesterKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Hello360-ckagwyhcijcxfkggfodnktdjtyrc/Build/Products/Debug-iphoneos/D360TesterKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +148,7 @@
 		8A5B1F1C1FC57FA500252633 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */,
 				8A7390331FC5D5CE005AEB02 /* D360KitExtension.framework */,
 				8A5B1F1D1FC57FB700252633 /* D360Kit.framework */,
 			);

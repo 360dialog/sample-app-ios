@@ -6,6 +6,7 @@
 import UIKit
 import D360Kit
 import UserNotifications
+import D360TesterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,10 +26,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 10, *) {
             UNUserNotificationCenter.current().delegate = self
         }
+
+        DTTester.send(DTInApp())
+
+        let inbox = DTInbox()
+        inbox.title = "Hello"
+        inbox.body = "How are you?"
+        DTTester.send(inbox)
+
         
         D360.setLogLevel(.info)
         
         applyStyle()
+        
         return true
     }
     

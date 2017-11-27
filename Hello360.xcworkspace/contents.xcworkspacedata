@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Hello360/Hello360.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:D360TesterKit/D360TesterKit.xcodeproj">
+   </FileRef>
 </Workspace>

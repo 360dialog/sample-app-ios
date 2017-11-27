@@ -1,0 +1,28 @@
+
+{
+  "aps": {
+    "content-available": 1
+  },
+  "d360": {
+    "a": {
+      "n": "inbox",
+      "p": {
+        "t": "Never miss a content",
+        "b": "Allow push notification now",
+        "att": {
+          "u": "https://inapp-samples.s3.amazonaws.com/images/push-round@3x.png",
+          "t": "image/jpeg"
+        },
+        "a": {
+          "n": "overlay",
+          "p": {
+            "t": "html",
+            "d": {
+              "u": "https://inapp-samples.s3.amazonaws.com/push-permissions.html"
+            }
+          }
+        }
+      }
+    }
+  }
+}
