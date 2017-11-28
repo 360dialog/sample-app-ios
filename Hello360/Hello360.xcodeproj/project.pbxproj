@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A04CD861FC5B2C3004D07A5 /* UIColor+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04CD851FC5B2C3004D07A5 /* UIColor+Style.swift */; };
+		8A0BB16C1FCD8AA1003B0FC1 /* D360TesterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */; };
+		8A0BB16D1FCD8AA1003B0FC1 /* D360TesterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A3D64E11FBB0346008D87C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */; };
 		8A3D64E31FBB0346008D87C5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */; };
 		8A3D64E61FBB0346008D87C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E41FBB0346008D87C5 /* Main.storyboard */; };
@@ -64,6 +66,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8A5B1F1F1FC57FBF00252633 /* D360Kit.framework in Embed Frameworks */,
+				8A0BB16D1FCD8AA1003B0FC1 /* D360TesterKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +92,7 @@
 		8A8E926F1FC5C6A900CA15F2 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		8A8E92711FC5C6A900CA15F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9B7E971FBD8EDB00DCC2B5 /* Hello360.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello360.entitlements; sourceTree = "<group>"; };
-		8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360TesterKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Hello360-ckagwyhcijcxfkggfodnktdjtyrc/Build/Products/Debug-iphoneos/D360TesterKit.framework"; sourceTree = "<group>"; };
+		8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = D360TesterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A5B1F1E1FC57FBF00252633 /* D360Kit.framework in Frameworks */,
+				8A0BB16C1FCD8AA1003B0FC1 /* D360TesterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
