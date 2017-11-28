@@ -44,6 +44,10 @@ extension InboxViewController {
     
     func sendSampleNotification() {
         let campaign = DTNotification(title: "Hi 👋", body: "Tap to open a URL")
+        
+        // By default, the notification is a foreground notification. You can disable it here
+        // campaign.isForeground = false
+        
         DTTester.send(campaign)
     }
     

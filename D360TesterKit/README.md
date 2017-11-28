@@ -16,10 +16,10 @@ Only [Carthage](https://github.com/Carthage/Carthage) is supported.
 
 - Cartfile
 
-```bash
-# Cartfile
-github "sample-app-ios"
-```
+	```bash
+	# Cartfile
+	github "sample-app-ios"
+	```
 
 - Run  `bash carthage update --use-ssh`
 - Add the `D360TesterKit.framework` to your app
@@ -29,27 +29,38 @@ github "sample-app-ios"
 
 - Simulate a sample InboxMessage
 
-```swift
-
-let inbox = DTInbox(title: "Hi", body: "How are you?")
-        
-// The image url of the inbox attachment
-inbox.attachmentURL = URL(string: "https://inapp-samples.s3.amazonaws.com/images/push-round@3x.png")
-DTTester.send(inbox)
-```
+	```swift
+	let campaign = DTInbox(title: "Hi 👋", body: "Tap to open a URL")
+	        
+	// You can customise the image url of the inbox attachment
+	// campaign.attachmentURL = URL(string: "https://inapp-samples.s3.amazonaws.com/images/push-round@3x.png")
+	
+	DTTester.send(campaign)
+	```
 
 - Simulate a sample InAppMessage:
 
-```swift
-// This inapp is a default 360dialog inapp and you can send it as it is.
-let inApp = DTInApp()
+	```swift
+	// This inapp is a default 360dialog inapp and you can send it as it is.
+	let campaign = DTInApp()
+	
+	// optionally, you can supply your own HTML to the InApp
+	// campaign.url = URL(string: "https://inapp-samples.s3.amazonaws.com/push-permissions.html")!
+	
+	DTTester.send(campaign)
 
-// optionally, you can supply your own HTML to the InApp
-inApp.url = URL(string: "https://inapp-samples.s3.amazonaws.com/push-permissions.html")!
+	```
 
-DTTester.send(inApp)
+- Simulate a native push notification:
 
-```
+	```swift
+	let campaign = DTNotification(title: "Hi 👋", body: "Tap to open a URL")
+	    
+	// By default, the notification is a foreground notification. You can disable it here
+	// campaign.isForeground = false
+	    
+	DTTester.send(campaign)
+	```
 
 
 
