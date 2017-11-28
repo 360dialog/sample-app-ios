@@ -19,18 +19,26 @@
     NSDictionary *sample = payload;
 
     BOOL isSilent = [[payload valueForKeyPath:@"aps.content-available"] boolValue];
+    BOOL isForeground = [[payload valueForKeyPath:@"d360.notification.foreground_notification_types"] integerValue] != 0;
     if (isSilent) {
         [self scheduleSilentPush:sample];
         return;
     }
+
+    NSTimeInterval delay = isForeground ? 0 : 3;
+
     if (@available(iOS 10, *)) {
-        [self scheduleLocalPushSample:sample delay:0];
+        [self scheduleLocalPushSampleUN:sample delay:delay];
     } else {
-        [self scheduleLocalPushSampleOld:sample delay:0];
+        [self scheduleLocalPushSampleUI:sample delay:delay];
+    }
+
+    if(!isForeground ) {
+        [[UIApplication sharedApplication] performSelector:@selector(suspend) withObject:nil afterDelay:1];
     }
 }
 
-- (void)scheduleLocalPushSample:(NSDictionary *)sample delay:(NSTimeInterval)pushDelay NS_AVAILABLE_IOS(10_0)
+- (void)scheduleLocalPushSampleUN:(NSDictionary *)sample delay:(NSTimeInterval)pushDelay NS_AVAILABLE_IOS(10_0)
 {
     NSDictionary *payload = sample;
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
@@ -67,7 +75,9 @@
     }
 }
 
-- (void)scheduleLocalPushSampleOld:(NSDictionary *)sample delay:(NSTimeInterval)pushDelay
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+- (void)scheduleLocalPushSampleUI:(NSDictionary *)sample delay:(NSTimeInterval)pushDelay
 {
 
     NSDictionary *payload = sample;
@@ -85,6 +95,7 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 
 }
+#pragma clang diagnostic pop
 
 - (void)scheduleSilentPush:(NSDictionary *)sample
 {

@@ -23,18 +23,18 @@
 - (instancetype)init
 {
     static dispatch_once_t token;
-    static NSDictionary *inAppTemplate;
+    static NSDictionary *template;
 
     dispatch_once(&token, ^{
 
         NSURL *url = [[NSBundle bundleForClass:[self class]] URLForResource:@"inapp-template" withExtension:@"json"];
         NSData *data = [NSData dataWithContentsOfURL:url];
 
-        inAppTemplate = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+        template = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
     });
 
 
-    self = [super initWithUserInfo:[inAppTemplate mutableCopy]];
+    self = [super initWithUserInfo:[template mutableCopy]];
     if (self) {
 
     }

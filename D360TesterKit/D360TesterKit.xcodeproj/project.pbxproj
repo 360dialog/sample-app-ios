@@ -11,8 +11,8 @@
 		8A9B7EC41FBD929600DCC2B5 /* DTTester.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9B7EC21FBD929600DCC2B5 /* DTTester.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A9B7EC51FBD929600DCC2B5 /* DTTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7EC31FBD929600DCC2B5 /* DTTester.m */; };
 		8A9B7EC81FBD935100DCC2B5 /* DTCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9B7EC71FBD935100DCC2B5 /* DTCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A9B7ECB1FBD940E00DCC2B5 /* DTPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9B7EC91FBD940E00DCC2B5 /* DTPush.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A9B7ECC1FBD940E00DCC2B5 /* DTPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7ECA1FBD940E00DCC2B5 /* DTPush.m */; };
+		8A9B7ECB1FBD940E00DCC2B5 /* DTNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9B7EC91FBD940E00DCC2B5 /* DTNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A9B7ECC1FBD940E00DCC2B5 /* DTNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7ECA1FBD940E00DCC2B5 /* DTNotification.m */; };
 		C4D8702CCDA71ED49EF7159A /* DTInApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D8772835CFE0E0E6ED16CE /* DTInApp.m */; };
 		C4D871747D489D37272EFC18 /* DTAbstractCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D8716B251B38F1542E847E /* DTAbstractCampaign.m */; };
 		C4D87238D71B0A0F43FE00F6 /* inbox-template.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D8734BA99FB80935BC0678 /* inbox-template.json */; };
@@ -21,6 +21,7 @@
 		C4D877B86DEC98473155FB66 /* DTInApp.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D87AD2EC0B69F6EB638E3F /* DTInApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D878827E7B02A0605E8C5D /* DTAbstractCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D875068BB40571A73B19DA /* DTAbstractCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D87B254AB9D11438D3C66C /* DTInbox.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D877B05A89E8367B53C495 /* DTInbox.m */; };
+		C4D87B7EAA7815D0E17B6415 /* notification-template.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D87E7A11813B7314A9EE09 /* notification-template.json */; };
 		C4D87EA9BA1108833C50D3BC /* DTInbox.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D874896ACF7572432AF693 /* DTInbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D87EDDC94EEBF196D9C430 /* DTPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D87F8C257C690A5D8364E3 /* DTPusher.m */; };
 /* End PBXBuildFile section */
@@ -32,8 +33,8 @@
 		8A9B7EC21FBD929600DCC2B5 /* DTTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTTester.h; sourceTree = "<group>"; };
 		8A9B7EC31FBD929600DCC2B5 /* DTTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTester.m; sourceTree = "<group>"; };
 		8A9B7EC71FBD935100DCC2B5 /* DTCampaign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTCampaign.h; sourceTree = "<group>"; };
-		8A9B7EC91FBD940E00DCC2B5 /* DTPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTPush.h; sourceTree = "<group>"; };
-		8A9B7ECA1FBD940E00DCC2B5 /* DTPush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTPush.m; sourceTree = "<group>"; };
+		8A9B7EC91FBD940E00DCC2B5 /* DTNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTNotification.h; sourceTree = "<group>"; };
+		8A9B7ECA1FBD940E00DCC2B5 /* DTNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTNotification.m; sourceTree = "<group>"; };
 		C4D8716B251B38F1542E847E /* DTAbstractCampaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAbstractCampaign.m; sourceTree = "<group>"; };
 		C4D8734BA99FB80935BC0678 /* inbox-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "inbox-template.json"; sourceTree = "<group>"; };
 		C4D87432DC81377517BAAA55 /* DTPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTPusher.h; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		C4D877B05A89E8367B53C495 /* DTInbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInbox.m; sourceTree = "<group>"; };
 		C4D8781E4D90E06D93434769 /* inapp-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "inapp-template.json"; sourceTree = "<group>"; };
 		C4D87AD2EC0B69F6EB638E3F /* DTInApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInApp.h; sourceTree = "<group>"; };
+		C4D87E7A11813B7314A9EE09 /* notification-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "notification-template.json"; sourceTree = "<group>"; };
 		C4D87F8C257C690A5D8364E3 /* DTPusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTPusher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				8A9B7EC71FBD935100DCC2B5 /* DTCampaign.h */,
-				8A9B7EC91FBD940E00DCC2B5 /* DTPush.h */,
-				8A9B7ECA1FBD940E00DCC2B5 /* DTPush.m */,
+				8A9B7EC91FBD940E00DCC2B5 /* DTNotification.h */,
+				8A9B7ECA1FBD940E00DCC2B5 /* DTNotification.m */,
 				C4D87AD2EC0B69F6EB638E3F /* DTInApp.h */,
 				C4D8772835CFE0E0E6ED16CE /* DTInApp.m */,
 				C4D874896ACF7572432AF693 /* DTInbox.h */,
@@ -109,6 +111,7 @@
 			children = (
 				C4D8781E4D90E06D93434769 /* inapp-template.json */,
 				C4D8734BA99FB80935BC0678 /* inbox-template.json */,
+				C4D87E7A11813B7314A9EE09 /* notification-template.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -122,7 +125,7 @@
 			files = (
 				8A9B7EC81FBD935100DCC2B5 /* DTCampaign.h in Headers */,
 				8A9B7EC41FBD929600DCC2B5 /* DTTester.h in Headers */,
-				8A9B7ECB1FBD940E00DCC2B5 /* DTPush.h in Headers */,
+				8A9B7ECB1FBD940E00DCC2B5 /* DTNotification.h in Headers */,
 				8A9B7EBC1FBD927D00DCC2B5 /* D360TesterKit.h in Headers */,
 				C4D873C6E1487C8E1C85D15C /* DTPusher.h in Headers */,
 				C4D877B86DEC98473155FB66 /* DTInApp.h in Headers */,
@@ -191,6 +194,7 @@
 			files = (
 				C4D874CC098325D2B2E40A2B /* inapp-template.json in Resources */,
 				C4D87238D71B0A0F43FE00F6 /* inbox-template.json in Resources */,
+				C4D87B7EAA7815D0E17B6415 /* notification-template.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A9B7EC51FBD929600DCC2B5 /* DTTester.m in Sources */,
-				8A9B7ECC1FBD940E00DCC2B5 /* DTPush.m in Sources */,
+				8A9B7ECC1FBD940E00DCC2B5 /* DTNotification.m in Sources */,
 				C4D87EDDC94EEBF196D9C430 /* DTPusher.m in Sources */,
 				C4D8702CCDA71ED49EF7159A /* DTInApp.m in Sources */,
 				C4D87B254AB9D11438D3C66C /* DTInbox.m in Sources */,

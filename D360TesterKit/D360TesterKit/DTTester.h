@@ -1,9 +1,6 @@
 //
-//  DTTester.h
-//  D360TesterKit
-//
-//  Created by Jan Chaloupecky on 16.11.17.
-//  Copyright © 2017 360dialog. All rights reserved.
+//  This file is part of 360dialog SDK.
+//  See the file LICENSE.txt for copying permission.
 //
 
 #import <Foundation/Foundation.h>

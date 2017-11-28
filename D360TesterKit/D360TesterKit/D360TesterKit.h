@@ -1,9 +1,6 @@
 //
-//  D360TesterKit.h
-//  D360TesterKit
-//
-//  Created by Jan Chaloupecky on 16.11.17.
-//  Copyright © 2017 360dialog. All rights reserved.
+//  This file is part of 360dialog SDK.
+//  See the file LICENSE.txt for copying permission.
 //
 
 #import <UIKit/UIKit.h>
@@ -18,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char D360TesterKitVersionString[];
 #import "DTTester.h"
 #import "DTInApp.h"
 #import "DTInbox.h"
-#import "DTPush.h"
+#import "DTNotification.h"
