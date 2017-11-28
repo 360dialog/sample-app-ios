@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *body;
 @property (nonatomic, assign, getter=isForeground) BOOL foreground;
 
+- (instancetype)initWithTitle:(NSString *)title body:(NSString *)body;
+
++ (instancetype)notificationWithTitle:(NSString *)title body:(NSString *)body;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -66,12 +66,6 @@ class InboxViewController: UIViewController {
         fetchInboxWithCurrentFilter()
     }
     
-    @IBAction func composeButtonAction(sender: UIBarButtonItem) {
-
-        let inbox = DTInbox(title: "Hi", body: "How are you?")
-        DTTester.send(inbox)
-    }
-    
     // MARK:- Helpers
     
     func fetchImage(withURL url: URL?, inboxCell cell: InboxTableViewCell, at indexPath: IndexPath) {

@@ -29,6 +29,23 @@
     return self;
 }
 
+- (instancetype)initWithTitle:(NSString *)title body:(NSString *)body
+{
+    self = [self init];
+    if (self) {
+        self.title = title;
+        self.body = body;
+    }
+
+    return self;
+}
+
++ (instancetype)notificationWithTitle:(NSString *)title body:(NSString *)body
+{
+    return [[self alloc] initWithTitle:title body:body];
+}
+
+
 #pragma mark - Overrides
 
 - (void)setTitle:(NSString *)title

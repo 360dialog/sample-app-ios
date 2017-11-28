@@ -10,6 +10,7 @@
 		8A04CD861FC5B2C3004D07A5 /* UIColor+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04CD851FC5B2C3004D07A5 /* UIColor+Style.swift */; };
 		8A0BB16C1FCD8AA1003B0FC1 /* D360TesterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */; };
 		8A0BB16D1FCD8AA1003B0FC1 /* D360TesterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD8993B1FCC38C400E7809E /* D360TesterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A0BB16F1FCD9306003B0FC1 /* InboxViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BB16E1FCD9306003B0FC1 /* InboxViewController+Helpers.swift */; };
 		8A3D64E11FBB0346008D87C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */; };
 		8A3D64E31FBB0346008D87C5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */; };
 		8A3D64E61FBB0346008D87C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E41FBB0346008D87C5 /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		8A04CD851FC5B2C3004D07A5 /* UIColor+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Style.swift"; sourceTree = "<group>"; };
+		8A0BB16E1FCD9306003B0FC1 /* InboxViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InboxViewController+Helpers.swift"; sourceTree = "<group>"; };
 		8A3D64DD1FBB0346008D87C5 /* Hello360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				8A5B1F201FC5850F00252633 /* ViewController+Helpers.swift */,
 				8A04CD851FC5B2C3004D07A5 /* UIColor+Style.swift */,
 				8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */,
+				8A0BB16E1FCD9306003B0FC1 /* InboxViewController+Helpers.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3D64E31FBB0346008D87C5 /* InboxViewController.swift in Sources */,
+				8A0BB16F1FCD9306003B0FC1 /* InboxViewController+Helpers.swift in Sources */,
 				8A04CD861FC5B2C3004D07A5 /* UIColor+Style.swift in Sources */,
 				8A5B1F291FC5889A00252633 /* InboxBarViewController.swift in Sources */,
 				8AD899401FCC546A00E7809E /* AppDelegate+Helpers.swift in Sources */,
