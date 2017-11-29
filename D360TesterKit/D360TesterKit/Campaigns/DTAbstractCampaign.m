@@ -7,33 +7,31 @@
 
 @interface DTAbstractCampaign ()
 
-
-
 @end
 
 
-
 @implementation DTAbstractCampaign
+
+@synthesize action = _action;
 
 - (instancetype)initWithUserInfo:(NSMutableDictionary *)userInfo
 {
     self = [super init];
     if (self) {
-        self.userInfo = userInfo;
+        self.self.userInfo = userInfo;
     }
 
     return self;
 }
 
+- (void)setAction:(id <DTAction>)action
+{
+    [self.userInfo setValue:[[action JSON] mutableCopy] forKeyPath:@"d360.a"];
+}
 
 - (NSDictionary *)JSON
 {
     return [self.userInfo copy];
-}
-
-- (NSDictionary *)action
-{
-    return [[[self userInfo] copy] valueForKeyPath:@"d360.a.p.a"];
 }
 
 @end

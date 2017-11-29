@@ -17,8 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithTitle:(NSString *)title body:(NSString *)body;
 
-+ (instancetype)notificationWithTitle:(NSString *)title body:(NSString *)body;
-
 
 @end
 

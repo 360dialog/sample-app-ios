@@ -38,12 +38,26 @@ extension InboxViewController {
     }
     
     func sendSampleInbox() {
-        let campaign = DTInbox(title: "Hi 👋", body: "Tap to open a URL")
+        let campaign = DTInbox(title: "Hi 👋", body: "Tap to open the Maps app")
+        
+        // The inbox will have a Deeplink as action to the Map app as action when tapped
+        campaign.action = DTURLAction(url: URL(string:"http://maps.apple.com/?ll=52.5287174,13.4154767")!)
+        campaign.attachmentURL = URL(string: "https://pbs.twimg.com/profile_images/2566510432/ba1akm5czgzocd36xb2z_400x400.png")!
+
+        
+        // The inbox will have a InApp as action when tapped
+        // this example InApp does have a HTML close button so we disable the native one
+        
+        // campaign.body = "Tap to open the InApp"
+        // campaign.action =  DTInAppAction(url: URL(string: "https://inapp-samples.s3.amazonaws.com/inapp-close-button.html")!, buttonType: .none)
+        
         DTTester.send(campaign)
     }
     
     func sendSampleNotification() {
         let campaign = DTNotification(title: "Hi 👋", body: "Tap to open a URL")
+        
+        campaign.action = DTURLAction(url: URL(string:"https://google.com")!)
         
         // By default, the notification is a foreground notification. You can disable it here
         // campaign.isForeground = false
@@ -52,6 +66,7 @@ extension InboxViewController {
     }
     
     func sendSampleInApp() {
+        
         let campaign = DTInApp()
         
         // use your own InApps here for testing purposes

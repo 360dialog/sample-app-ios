@@ -15,11 +15,16 @@
 		8A9B7ECC1FBD940E00DCC2B5 /* DTNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7ECA1FBD940E00DCC2B5 /* DTNotification.m */; };
 		C4D8702CCDA71ED49EF7159A /* DTInApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D8772835CFE0E0E6ED16CE /* DTInApp.m */; };
 		C4D871747D489D37272EFC18 /* DTAbstractCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D8716B251B38F1542E847E /* DTAbstractCampaign.m */; };
+		C4D871C6DF4A663EE42AD31B /* DTAction.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D87C2BD6094567728CEC67 /* DTAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4D871EC23BAAA432EAAF4CD /* DTURLAction.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D870E9E689548BC6374511 /* DTURLAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D87238D71B0A0F43FE00F6 /* inbox-template.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D8734BA99FB80935BC0678 /* inbox-template.json */; };
+		C4D872D7DE321DB9A1DFF460 /* DTURLAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D87F0D5E5C1C85AA0ADC06 /* DTURLAction.m */; };
 		C4D873C6E1487C8E1C85D15C /* DTPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D87432DC81377517BAAA55 /* DTPusher.h */; };
 		C4D874CC098325D2B2E40A2B /* inapp-template.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D8781E4D90E06D93434769 /* inapp-template.json */; };
 		C4D877B86DEC98473155FB66 /* DTInApp.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D87AD2EC0B69F6EB638E3F /* DTInApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D878827E7B02A0605E8C5D /* DTAbstractCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D875068BB40571A73B19DA /* DTAbstractCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4D879797BADCC6C1F042BFE /* DTInAppAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D8724720FF7EBEB6AF5417 /* DTInAppAction.m */; };
+		C4D87A9685BC16B4F7817F38 /* DTInAppAction.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D872C035760AA8C70A87A8 /* DTInAppAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D87B254AB9D11438D3C66C /* DTInbox.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D877B05A89E8367B53C495 /* DTInbox.m */; };
 		C4D87B7EAA7815D0E17B6415 /* notification-template.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D87E7A11813B7314A9EE09 /* notification-template.json */; };
 		C4D87EA9BA1108833C50D3BC /* DTInbox.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D874896ACF7572432AF693 /* DTInbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,7 +40,10 @@
 		8A9B7EC71FBD935100DCC2B5 /* DTCampaign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTCampaign.h; sourceTree = "<group>"; };
 		8A9B7EC91FBD940E00DCC2B5 /* DTNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTNotification.h; sourceTree = "<group>"; };
 		8A9B7ECA1FBD940E00DCC2B5 /* DTNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTNotification.m; sourceTree = "<group>"; };
+		C4D870E9E689548BC6374511 /* DTURLAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTURLAction.h; sourceTree = "<group>"; };
 		C4D8716B251B38F1542E847E /* DTAbstractCampaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAbstractCampaign.m; sourceTree = "<group>"; };
+		C4D8724720FF7EBEB6AF5417 /* DTInAppAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInAppAction.m; sourceTree = "<group>"; };
+		C4D872C035760AA8C70A87A8 /* DTInAppAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInAppAction.h; sourceTree = "<group>"; };
 		C4D8734BA99FB80935BC0678 /* inbox-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "inbox-template.json"; sourceTree = "<group>"; };
 		C4D87432DC81377517BAAA55 /* DTPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTPusher.h; sourceTree = "<group>"; };
 		C4D874896ACF7572432AF693 /* DTInbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInbox.h; sourceTree = "<group>"; };
@@ -44,7 +52,9 @@
 		C4D877B05A89E8367B53C495 /* DTInbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInbox.m; sourceTree = "<group>"; };
 		C4D8781E4D90E06D93434769 /* inapp-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "inapp-template.json"; sourceTree = "<group>"; };
 		C4D87AD2EC0B69F6EB638E3F /* DTInApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInApp.h; sourceTree = "<group>"; };
+		C4D87C2BD6094567728CEC67 /* DTAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAction.h; sourceTree = "<group>"; };
 		C4D87E7A11813B7314A9EE09 /* notification-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "notification-template.json"; sourceTree = "<group>"; };
+		C4D87F0D5E5C1C85AA0ADC06 /* DTURLAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTURLAction.m; sourceTree = "<group>"; };
 		C4D87F8C257C690A5D8364E3 /* DTPusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTPusher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +103,7 @@
 		8A9B7EC61FBD92C000DCC2B5 /* Campaigns */ = {
 			isa = PBXGroup;
 			children = (
+				C4D873054F84B603AB2321DA /* Actions */,
 				8A9B7EC71FBD935100DCC2B5 /* DTCampaign.h */,
 				8A9B7EC91FBD940E00DCC2B5 /* DTNotification.h */,
 				8A9B7ECA1FBD940E00DCC2B5 /* DTNotification.m */,
@@ -116,6 +127,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C4D873054F84B603AB2321DA /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				C4D87C2BD6094567728CEC67 /* DTAction.h */,
+				C4D870E9E689548BC6374511 /* DTURLAction.h */,
+				C4D87F0D5E5C1C85AA0ADC06 /* DTURLAction.m */,
+				C4D872C035760AA8C70A87A8 /* DTInAppAction.h */,
+				C4D8724720FF7EBEB6AF5417 /* DTInAppAction.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -131,6 +154,9 @@
 				C4D877B86DEC98473155FB66 /* DTInApp.h in Headers */,
 				C4D87EA9BA1108833C50D3BC /* DTInbox.h in Headers */,
 				C4D878827E7B02A0605E8C5D /* DTAbstractCampaign.h in Headers */,
+				C4D871C6DF4A663EE42AD31B /* DTAction.h in Headers */,
+				C4D871EC23BAAA432EAAF4CD /* DTURLAction.h in Headers */,
+				C4D87A9685BC16B4F7817F38 /* DTInAppAction.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +237,8 @@
 				C4D8702CCDA71ED49EF7159A /* DTInApp.m in Sources */,
 				C4D87B254AB9D11438D3C66C /* DTInbox.m in Sources */,
 				C4D871747D489D37272EFC18 /* DTAbstractCampaign.m in Sources */,
+				C4D872D7DE321DB9A1DFF460 /* DTURLAction.m in Sources */,
+				C4D879797BADCC6C1F042BFE /* DTInAppAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

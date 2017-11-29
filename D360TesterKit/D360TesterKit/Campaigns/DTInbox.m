@@ -45,24 +45,29 @@
     return self;
 }
 
+- (void)setAction:(id <DTAction>)action
+{
+    [self.userInfo setValue:[[action JSON] mutableCopy] forKeyPath:@"d360.a.p.a"];
+}
+
 
 #pragma mark - Overrides
 
 - (void)setTitle:(NSString *)title
 {
-    _title = [title mutableCopy];
+    _title = title;
     [self.userInfo setValue:title forKeyPath:@"d360.a.p.t"];
 }
 
 - (void)setBody:(NSString *)body
 {
-    _body = [body mutableCopy];
+    _body = body;
     [self.userInfo setValue:body forKeyPath:@"d360.a.p.b"];
 }
 
 - (void)setAttachmentURL:(NSURL *)attachmentURL
 {
-    _attachmentURL = [attachmentURL mutableCopy];
+    _attachmentURL = attachmentURL;
     [self.userInfo setValue:attachmentURL.absoluteString forKeyPath:@"d360.a.p.att.u"];
 }
 

@@ -16,3 +16,6 @@ FOUNDATION_EXPORT const unsigned char D360TesterKitVersionString[];
 #import "DTInApp.h"
 #import "DTInbox.h"
 #import "DTNotification.h"
+#import "DTAction.h"
+#import "DTURLAction.h"
+#import "DTInAppAction.h"

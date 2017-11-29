@@ -20,7 +20,6 @@
         template = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
     });
 
-
     self = [super initWithUserInfo:[template mutableCopy]];
     if (self) {
 
@@ -38,11 +37,6 @@
     }
 
     return self;
-}
-
-+ (instancetype)notificationWithTitle:(NSString *)title body:(NSString *)body
-{
-    return [[self alloc] initWithTitle:title body:body];
 }
 
 

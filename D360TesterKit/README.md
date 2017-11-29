@@ -27,14 +27,29 @@ Only [Carthage](https://github.com/Carthage/Carthage) is supported.
 ### Usage
 
 
-- Simulate a sample InboxMessage
+- InboxMessage with a DeepLink action
 
 	```swift
-	let campaign = DTInbox(title: "Hi 👋", body: "Tap to open a URL")
+	let campaign = DTInbox(title: "Hi 👋", body: "Tap to open the Maps app")
 	        
 	// You can customise the image url of the inbox attachment
-	// campaign.attachmentURL = URL(string: "https://inapp-samples.s3.amazonaws.com/images/push-round@3x.png")
+	campaign.attachmentURL = URL(string: "https://pbs.twimg.com/profile_images/2566510432/ba1akm5czgzocd36xb2z_400x400.png")!
 	
+   // The inbox will have a Deeplink as action to the Map app as action when tapped
+   campaign.action = DTURLAction(url: URL(string:"http://maps.apple.com/?ll=52.5287174,13.4154767")!)
+
+	DTTester.send(campaign)
+	```
+	
+- InboxMessage with a InApp action
+
+	```swift
+	let campaign = DTInbox(title: "Hi 👋", body: "Tap to open an InApp Message")
+	        
+	
+   // The inbox will have a InApp as action when tapped
+   campaign.action = DTInAppAction()
+
 	DTTester.send(campaign)
 	```
 

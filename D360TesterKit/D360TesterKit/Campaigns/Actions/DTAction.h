@@ -5,18 +5,12 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DTAction.h"
-
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol DTCampaign <NSObject>
+@protocol DTAction <NSObject>
 
-@property (nullable, nonatomic, strong) id <DTAction> action;
-
-- (NSDictionary *)JSON;
-
+-(NSDictionary *) JSON;
 
 @end
 
 NS_ASSUME_NONNULL_END
-
