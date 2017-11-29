@@ -54,6 +54,13 @@
     [self.userInfo setValue:body forKeyPath:@"aps.alert.body"];
 }
 
+- (void)setRichURL:(NSURL *)richURL
+{
+    _richURL = richURL;
+    [self.userInfo setValue:richURL.absoluteString forKeyPath:@"d360.notification.attachment_url"];
+}
+
+
 - (void)setForeground:(BOOL)foreground
 {
     _foreground = foreground;

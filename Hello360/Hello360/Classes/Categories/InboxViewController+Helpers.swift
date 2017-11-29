@@ -57,7 +57,10 @@ extension InboxViewController {
     func sendSampleNotification() {
         let campaign = DTNotification(title: "Hi 👋", body: "Tap to open a URL")
         
-        campaign.action = DTURLAction(url: URL(string:"https://google.com")!)
+        campaign.action = DTURLAction(url: URL(string:"http://www.google.com/search?q=macarons")!)
+
+        // Set the URL of the rich content
+        campaign.richURL = URL(string: "https://inapp-samples.s3.amazonaws.com/examples/JPG/desertsmall.jpg")!
         
         // By default, the notification is a foreground notification. You can disable it here
         // campaign.isForeground = false

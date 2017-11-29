@@ -4,6 +4,7 @@
 //
 
 #import "DTPusher.h"
+#import "DTRichNotificationHelper.h"
 
 @import UIKit;
 @import UserNotifications;
@@ -56,18 +57,17 @@
 
 
     UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:[[NSUUID UUID] UUIDString] content:content trigger:trigger];
+    
 
-    BOOL rich = NO;
+    // create a rich content if needed
+    BOOL rich = [DTRichNotificationHelper handleNotificationRequest:request withContentHandler:^(UNNotificationContent *richContent) {
+        UNNotificationRequest *richRequest = [UNNotificationRequest requestWithIdentifier:[[NSUUID UUID] UUIDString] content:richContent trigger:trigger];
+        [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:richRequest withCompletionHandler:^(NSError *error) {
+            NSLog(@"Local notification scheduled with %@", error ? error : @"success");
+        }];
+    }];
 
-//    D360RichNotificationHelper *helper = [[D360RichNotificationHelper alloc] init];
-//
-//    BOOL rich = [helper handleNotificationRequest:request withContentHandler:^(UNNotificationContent *localContent) {
-//        UNNotificationRequest *richRequest = [UNNotificationRequest requestWithIdentifier:[[NSUUID UUID] UUIDString] content:localContent trigger:trigger];
-//        [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:richRequest withCompletionHandler:^(NSError *error) {
-//            NSLog(@"Local notification scheduled with %@", error ? error : @"success");
-//        }];
-//    }];
-
+    // not a rich push, add the original request
     if (!rich) {
         [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError *error) {
             NSLog(@"Local notification scheduled with %@", error ? error : @"success");

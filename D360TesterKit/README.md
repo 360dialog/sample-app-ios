@@ -70,9 +70,13 @@ Only [Carthage](https://github.com/Carthage/Carthage) is supported.
 
 	```swift
 	let campaign = DTNotification(title: "Hi 👋", body: "Tap to open a URL")
-	    
+
+	// Set the URL of the rich content
+   campaign.richURL = URL(string: "https://inapp-samples.s3.amazonaws.com/examples/JPG/desertsmall.jpg")!
+        	    
 	// By default, the notification is a foreground notification. You can disable it here
 	// campaign.isForeground = false
+
 	    
 	DTTester.send(campaign)
 	```

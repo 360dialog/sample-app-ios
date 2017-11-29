@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A4F73E01FCF0A9100CFDB6C /* DTRichNotificationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4F73DE1FCF0A9100CFDB6C /* DTRichNotificationHelper.h */; };
+		8A4F73E11FCF0A9100CFDB6C /* DTRichNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4F73DF1FCF0A9100CFDB6C /* DTRichNotificationHelper.m */; };
 		8A9B7EBC1FBD927D00DCC2B5 /* D360TesterKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9B7EBA1FBD927D00DCC2B5 /* D360TesterKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A9B7EC41FBD929600DCC2B5 /* DTTester.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9B7EC21FBD929600DCC2B5 /* DTTester.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A9B7EC51FBD929600DCC2B5 /* DTTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7EC31FBD929600DCC2B5 /* DTTester.m */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A4F73DE1FCF0A9100CFDB6C /* DTRichNotificationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTRichNotificationHelper.h; sourceTree = "<group>"; };
+		8A4F73DF1FCF0A9100CFDB6C /* DTRichNotificationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTRichNotificationHelper.m; sourceTree = "<group>"; };
 		8A9B7EB71FBD927D00DCC2B5 /* D360TesterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = D360TesterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9B7EBA1FBD927D00DCC2B5 /* D360TesterKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D360TesterKit.h; sourceTree = "<group>"; };
 		8A9B7EBB1FBD927D00DCC2B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				8A9B7EC31FBD929600DCC2B5 /* DTTester.m */,
 				C4D87F8C257C690A5D8364E3 /* DTPusher.m */,
 				C4D87432DC81377517BAAA55 /* DTPusher.h */,
+				8A4F73DE1FCF0A9100CFDB6C /* DTRichNotificationHelper.h */,
+				8A4F73DF1FCF0A9100CFDB6C /* DTRichNotificationHelper.m */,
 				C4D871DBC01151AF0D4E4DF6 /* Resources */,
 			);
 			path = D360TesterKit;
@@ -150,6 +156,7 @@
 				8A9B7EC41FBD929600DCC2B5 /* DTTester.h in Headers */,
 				8A9B7ECB1FBD940E00DCC2B5 /* DTNotification.h in Headers */,
 				8A9B7EBC1FBD927D00DCC2B5 /* D360TesterKit.h in Headers */,
+				8A4F73E01FCF0A9100CFDB6C /* DTRichNotificationHelper.h in Headers */,
 				C4D873C6E1487C8E1C85D15C /* DTPusher.h in Headers */,
 				C4D877B86DEC98473155FB66 /* DTInApp.h in Headers */,
 				C4D87EA9BA1108833C50D3BC /* DTInbox.h in Headers */,
@@ -239,6 +246,7 @@
 				C4D871747D489D37272EFC18 /* DTAbstractCampaign.m in Sources */,
 				C4D872D7DE321DB9A1DFF460 /* DTURLAction.m in Sources */,
 				C4D879797BADCC6C1F042BFE /* DTInAppAction.m in Sources */,
+				8A4F73E11FCF0A9100CFDB6C /* DTRichNotificationHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

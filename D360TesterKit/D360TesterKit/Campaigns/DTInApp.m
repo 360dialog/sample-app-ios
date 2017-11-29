@@ -44,6 +44,11 @@
 
 #pragma mark - Overrides
 
+- (void)setAction:(id <DTAction>)action
+{
+    NSAssert(NO, @"Setting actions on a InApp campaign is not supported by the D360TesterKit");
+}
+
 - (void)setUrl:(NSURL *)url
 {
     _url = url;

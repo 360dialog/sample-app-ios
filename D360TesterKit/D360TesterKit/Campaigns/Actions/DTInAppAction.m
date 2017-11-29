@@ -35,12 +35,6 @@
     return self;
 }
 
-+ (instancetype)actionWithUrl:(NSURL *)url buttonType:(DTButtonType)buttonType
-{
-    return [[self alloc] initWithUrl:url buttonType:buttonType];
-}
-
-
 - (NSDictionary *)JSON
 {
     return @{

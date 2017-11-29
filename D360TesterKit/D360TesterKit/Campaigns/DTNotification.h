@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *body;
 @property (nonatomic, assign, getter=isForeground) BOOL foreground;
+@property (nonatomic, strong) NSURL *richURL;
 
 - (instancetype)initWithTitle:(NSString *)title body:(NSString *)body;
-
 
 @end
 
