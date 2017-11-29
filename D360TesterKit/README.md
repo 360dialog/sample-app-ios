@@ -18,7 +18,7 @@ Only [Carthage](https://github.com/Carthage/Carthage) is supported.
 
 	```bash
 	# Cartfile
-	github "sample-app-ios"
+	github "360dialog/sample-app-ios"
 	```
 
 - Run  `bash carthage update --use-ssh`
