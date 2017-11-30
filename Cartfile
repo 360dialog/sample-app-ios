@@ -1,4 +1,5 @@
 
 # Cartfile
 github "360dialog/sdk-ios" ~> 3.8
-github "360dialog/sdk-tester-ios"
+github "360dialog/sdk-tester-ios" "master"
+
