@@ -20,7 +20,13 @@ extension AppDelegate {
     func sendSampleInboxMessageIfNeeded() {
         D360.inbox().fetch(with: .any()) { messages, error in
             if(messages.count == 0) {
-                DTTester.send(DTInbox())
+                
+                let campaign = DTInbox(title: "Welcome to the sample app", body: "Tap here to request user push permissions")
+                
+                // The inbox will have a Deeplink as action to the Map app as action when tapped
+                campaign.action = DTInAppAction(url: URL(string: "https://inapp-samples.s3.amazonaws.com/push-permissions.html")!, buttonType: .dark)
+                
+                DTTester.send(campaign)
             }
         }
     }
