@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A04CD861FC5B2C3004D07A5 /* UIColor+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04CD851FC5B2C3004D07A5 /* UIColor+Style.swift */; };
+		8A0BB16F1FCD9306003B0FC1 /* InboxViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BB16E1FCD9306003B0FC1 /* InboxViewController+Helpers.swift */; };
+		8A3D64E11FBB0346008D87C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */; };
+		8A3D64E31FBB0346008D87C5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */; };
+		8A3D64E61FBB0346008D87C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E41FBB0346008D87C5 /* Main.storyboard */; };
+		8A3D64E81FBB0346008D87C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E71FBB0346008D87C5 /* Assets.xcassets */; };
+		8A3D64EB1FBB0346008D87C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D64E91FBB0346008D87C5 /* LaunchScreen.storyboard */; };
+		8A5B1F211FC5850F00252633 /* ViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B1F201FC5850F00252633 /* ViewController+Helpers.swift */; };
+		8A5B1F241FC5876F00252633 /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B1F231FC5876F00252633 /* InboxTableViewCell.swift */; };
+		8A5B1F291FC5889A00252633 /* InboxBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B1F281FC5889A00252633 /* InboxBarViewController.swift */; };
+		8A8E92701FC5C6A900CA15F2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8E926F1FC5C6A900CA15F2 /* NotificationService.swift */; };
+		8A8E92741FC5C6A900CA15F2 /* Hello360RichNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A8E926D1FC5C6A900CA15F2 /* Hello360RichNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AD899401FCC546A00E7809E /* AppDelegate+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */; };
+		8AE8E3E61FCFFE7C00B01686 /* D360Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E51FCFFE6800B01686 /* D360Kit.framework */; };
+		8AE8E3E71FCFFE7C00B01686 /* D360Kit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E51FCFFE6800B01686 /* D360Kit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8AE8E3E81FCFFE7C00B01686 /* D360TesterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E41FCFFE6800B01686 /* D360TesterKit.framework */; };
+		8AE8E3E91FCFFE7C00B01686 /* D360TesterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E41FCFFE6800B01686 /* D360TesterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8AE8E3EA1FCFFEF200B01686 /* D360KitExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E31FCFFE6800B01686 /* D360KitExtension.framework */; };
+		8AE8E3EB1FCFFF5F00B01686 /* D360KitExtension.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AE8E3E31FCFFE6800B01686 /* D360KitExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A8E92721FC5C6A900CA15F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A3D64D51FBB0346008D87C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A8E926C1FC5C6A900CA15F2;
+			remoteInfo = RichNotificationExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A8E92781FC5C6A900CA15F2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A8E92741FC5C6A900CA15F2 /* Hello360RichNotificationExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AAF96461FC5D8690027B42B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8AE8E3EB1FCFFF5F00B01686 /* D360KitExtension.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AEDE8781FBD84A8007BEDCE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8AE8E3E71FCFFE7C00B01686 /* D360Kit.framework in Embed Frameworks */,
+				8AE8E3E91FCFFE7C00B01686 /* D360TesterKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A04CD851FC5B2C3004D07A5 /* UIColor+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Style.swift"; sourceTree = "<group>"; };
+		8A0BB16E1FCD9306003B0FC1 /* InboxViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InboxViewController+Helpers.swift"; sourceTree = "<group>"; };
+		8A3D64DD1FBB0346008D87C5 /* Hello360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello360.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		8A3D64E51FBB0346008D87C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A3D64E71FBB0346008D87C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A3D64EA1FBB0346008D87C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A3D64EC1FBB0346008D87C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5B1F201FC5850F00252633 /* ViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Helpers.swift"; sourceTree = "<group>"; };
+		8A5B1F231FC5876F00252633 /* InboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
+		8A5B1F281FC5889A00252633 /* InboxBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxBarViewController.swift; sourceTree = "<group>"; };
+		8A5B1F2A1FC58DA400252633 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		8A8E926D1FC5C6A900CA15F2 /* Hello360RichNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Hello360RichNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8E926F1FC5C6A900CA15F2 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8A8E92711FC5C6A900CA15F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9B7E971FBD8EDB00DCC2B5 /* Hello360.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello360.entitlements; sourceTree = "<group>"; };
+		8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Helpers.swift"; sourceTree = "<group>"; };
+		8AE8E3E31FCFFE6800B01686 /* D360KitExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360KitExtension.framework; path = Carthage/Build/iOS/D360KitExtension.framework; sourceTree = "<group>"; };
+		8AE8E3E41FCFFE6800B01686 /* D360TesterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360TesterKit.framework; path = Carthage/Build/iOS/D360TesterKit.framework; sourceTree = "<group>"; };
+		8AE8E3E51FCFFE6800B01686 /* D360Kit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = D360Kit.framework; path = Carthage/Build/iOS/D360Kit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A3D64DA1FBB0346008D87C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE8E3E61FCFFE7C00B01686 /* D360Kit.framework in Frameworks */,
+				8AE8E3E81FCFFE7C00B01686 /* D360TesterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A8E926A1FC5C6A900CA15F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE8E3EA1FCFFEF200B01686 /* D360KitExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A3D64D41FBB0346008D87C5 = {
+			isa = PBXGroup;
+			children = (
+				8A3D64DF1FBB0346008D87C5 /* Hello360 */,
+				8A8E926E1FC5C6A900CA15F2 /* Hello360RichNotificationExtension */,
+				8A721EE81FCFFE2C00CE2FED /* Frameworks */,
+				8A3D64DE1FBB0346008D87C5 /* Products */,
+				8A5B1F2A1FC58DA400252633 /* Cartfile */,
+			);
+			sourceTree = "<group>";
+		};
+		8A3D64DE1FBB0346008D87C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A3D64DD1FBB0346008D87C5 /* Hello360.app */,
+				8A8E926D1FC5C6A900CA15F2 /* Hello360RichNotificationExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A3D64DF1FBB0346008D87C5 /* Hello360 */ = {
+			isa = PBXGroup;
+			children = (
+				8A5B1F261FC5878B00252633 /* Classes */,
+				8A9B7E971FBD8EDB00DCC2B5 /* Hello360.entitlements */,
+				8A3D64E01FBB0346008D87C5 /* AppDelegate.swift */,
+				8A3D64E41FBB0346008D87C5 /* Main.storyboard */,
+				8A3D64E71FBB0346008D87C5 /* Assets.xcassets */,
+				8A3D64E91FBB0346008D87C5 /* LaunchScreen.storyboard */,
+				8A3D64EC1FBB0346008D87C5 /* Info.plist */,
+			);
+			path = Hello360;
+			sourceTree = "<group>";
+		};
+		8A5B1F221FC5875700252633 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A3D64E21FBB0346008D87C5 /* InboxViewController.swift */,
+				8A5B1F281FC5889A00252633 /* InboxBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A5B1F251FC5877F00252633 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A5B1F231FC5876F00252633 /* InboxTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A5B1F261FC5878B00252633 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A5B1F271FC5879B00252633 /* Categories */,
+				8A5B1F251FC5877F00252633 /* Views */,
+				8A5B1F221FC5875700252633 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A5B1F271FC5879B00252633 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8A5B1F201FC5850F00252633 /* ViewController+Helpers.swift */,
+				8A04CD851FC5B2C3004D07A5 /* UIColor+Style.swift */,
+				8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */,
+				8A0BB16E1FCD9306003B0FC1 /* InboxViewController+Helpers.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8A721EE81FCFFE2C00CE2FED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AE8E3E51FCFFE6800B01686 /* D360Kit.framework */,
+				8AE8E3E31FCFFE6800B01686 /* D360KitExtension.framework */,
+				8AE8E3E41FCFFE6800B01686 /* D360TesterKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A8E926E1FC5C6A900CA15F2 /* Hello360RichNotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8A8E926F1FC5C6A900CA15F2 /* NotificationService.swift */,
+				8A8E92711FC5C6A900CA15F2 /* Info.plist */,
+			);
+			path = Hello360RichNotificationExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A3D64DC1FBB0346008D87C5 /* Hello360 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3D64EF1FBB0346008D87C5 /* Build configuration list for PBXNativeTarget "Hello360" */;
+			buildPhases = (
+				8A3D64D91FBB0346008D87C5 /* Sources */,
+				8A3D64DA1FBB0346008D87C5 /* Frameworks */,
+				8A3D64DB1FBB0346008D87C5 /* Resources */,
+				8AEDE8781FBD84A8007BEDCE /* Embed Frameworks */,
+				8A8E92781FC5C6A900CA15F2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A8E92731FC5C6A900CA15F2 /* PBXTargetDependency */,
+			);
+			name = Hello360;
+			productName = Hello360;
+			productReference = 8A3D64DD1FBB0346008D87C5 /* Hello360.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A8E926C1FC5C6A900CA15F2 /* Hello360RichNotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A8E92771FC5C6A900CA15F2 /* Build configuration list for PBXNativeTarget "Hello360RichNotificationExtension" */;
+			buildPhases = (
+				8A8E92691FC5C6A900CA15F2 /* Sources */,
+				8A8E926A1FC5C6A900CA15F2 /* Frameworks */,
+				8A8E926B1FC5C6A900CA15F2 /* Resources */,
+				8AAF96461FC5D8690027B42B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hello360RichNotificationExtension;
+			productName = RichNotificationExtension;
+			productReference = 8A8E926D1FC5C6A900CA15F2 /* Hello360RichNotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A3D64D51FBB0346008D87C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = 360dialog;
+				TargetAttributes = {
+					8A3D64DC1FBB0346008D87C5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					8A8E926C1FC5C6A900CA15F2 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8A3D64D81FBB0346008D87C5 /* Build configuration list for PBXProject "Hello360" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A3D64D41FBB0346008D87C5;
+			productRefGroup = 8A3D64DE1FBB0346008D87C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A3D64DC1FBB0346008D87C5 /* Hello360 */,
+				8A8E926C1FC5C6A900CA15F2 /* Hello360RichNotificationExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A3D64DB1FBB0346008D87C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3D64EB1FBB0346008D87C5 /* LaunchScreen.storyboard in Resources */,
+				8A3D64E81FBB0346008D87C5 /* Assets.xcassets in Resources */,
+				8A3D64E61FBB0346008D87C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A8E926B1FC5C6A900CA15F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A3D64D91FBB0346008D87C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3D64E31FBB0346008D87C5 /* InboxViewController.swift in Sources */,
+				8A0BB16F1FCD9306003B0FC1 /* InboxViewController+Helpers.swift in Sources */,
+				8A04CD861FC5B2C3004D07A5 /* UIColor+Style.swift in Sources */,
+				8A5B1F291FC5889A00252633 /* InboxBarViewController.swift in Sources */,
+				8AD899401FCC546A00E7809E /* AppDelegate+Helpers.swift in Sources */,
+				8A5B1F211FC5850F00252633 /* ViewController+Helpers.swift in Sources */,
+				8A5B1F241FC5876F00252633 /* InboxTableViewCell.swift in Sources */,
+				8A3D64E11FBB0346008D87C5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A8E92691FC5C6A900CA15F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A8E92701FC5C6A900CA15F2 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A8E92731FC5C6A900CA15F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A8E926C1FC5C6A900CA15F2 /* Hello360RichNotificationExtension */;
+			targetProxy = 8A8E92721FC5C6A900CA15F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A3D64E41FBB0346008D87C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3D64E51FBB0346008D87C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A3D64E91FBB0346008D87C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3D64EA1FBB0346008D87C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A3D64ED1FBB0346008D87C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A3D64EE1FBB0346008D87C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A3D64F01FBB0346008D87C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hello360/Hello360.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TDNRBR9AF;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Hello360/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A3D64F11FBB0346008D87C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hello360/Hello360.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TDNRBR9AF;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Hello360/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A8E92751FC5C6A900CA15F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TDNRBR9AF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Hello360RichNotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360.RichNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A8E92761FC5C6A900CA15F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TDNRBR9AF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Hello360RichNotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.360dialog.sample.Hello360.RichNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A3D64D81FBB0346008D87C5 /* Build configuration list for PBXProject "Hello360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3D64ED1FBB0346008D87C5 /* Debug */,
+				8A3D64EE1FBB0346008D87C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3D64EF1FBB0346008D87C5 /* Build configuration list for PBXNativeTarget "Hello360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3D64F01FBB0346008D87C5 /* Debug */,
+				8A3D64F11FBB0346008D87C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A8E92771FC5C6A900CA15F2 /* Build configuration list for PBXNativeTarget "Hello360RichNotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8E92751FC5C6A900CA15F2 /* Debug */,
+				8A8E92761FC5C6A900CA15F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A3D64D51FBB0346008D87C5 /* Project object */;
+}
