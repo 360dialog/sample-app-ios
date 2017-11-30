@@ -1,0 +1,6 @@
+framework module D360Kit {
+  umbrella header "D360Kit.h"
+
+  export *
+  module * { export * }
+}

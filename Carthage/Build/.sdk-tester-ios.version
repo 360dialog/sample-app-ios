@@ -1,0 +1,9 @@
+{
+  "commitish" : "69b5e1fac020afb8161ebe80c7bcd07098b498a5",
+  "iOS" : [
+    {
+      "name" : "D360TesterKit",
+      "hash" : "f8aa21c3322e3ffe5d6136c890373617c343a73be87d7514566ec803b8ce6914"
+    }
+  ]
+}

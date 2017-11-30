@@ -1,0 +1,6 @@
+framework module D360TesterKit {
+  umbrella header "D360TesterKit.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,13 @@
+{
+  "commitish" : "3.8.0",
+  "iOS" : [
+    {
+      "name" : "D360KitExtension",
+      "hash" : "8489c96a074a68e72a18bf84ab65cc89023b4c04dc012bfd195f602d6b492709"
+    },
+    {
+      "name" : "D360Kit",
+      "hash" : "6d4c0f8d3c852aeb34065ace2f63afe50c9d30ec6a5644d6fcbb2a9bf029828a"
+    }
+  ]
+}
