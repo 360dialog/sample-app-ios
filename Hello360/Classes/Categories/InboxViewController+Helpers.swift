@@ -38,11 +38,12 @@ extension InboxViewController {
     }
     
     func sendSampleInbox() {
-        let campaign = DTInbox(title: "Hi 👋", body: "Tap to open the Maps app")
+        let campaign = DTInbox(title: "Hi 👋", body: "Tap to execute the inbox action")
         
         // The inbox will have a Deeplink as action to the Map app as action when tapped
-        campaign.action = DTURLAction(url: URL(string:"http://maps.apple.com/?ll=52.5287174,13.4154767")!)
-        campaign.attachmentURL = URL(string: "https://pbs.twimg.com/profile_images/2566510432/ba1akm5czgzocd36xb2z_400x400.png")!
+        campaign.action = DTURLAction(url: URL(string:"http://www.google.com/search?q=macarons")!)
+        
+        campaign.attachmentURL = URL(string: "https://inapp-samples.s3.amazonaws.com/examples/JPG/desertsmall.jpg")!
 
         
         // The inbox will have a InApp as action when tapped
