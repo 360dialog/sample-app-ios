@@ -76,6 +76,7 @@ Carthage/Checkouts
 
 
 
+
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
 
@@ -90,7 +91,6 @@ Pods/
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
-build/
 DerivedData/
 
 ## Various settings
@@ -116,7 +116,6 @@ xcuserdata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-Hello360/Carthage/Checkouts/
 
 # End of https://www.gitignore.io/api/xcode,appcode,carthage,cocoapods
 /.idea/codeStyles/Project.xml
