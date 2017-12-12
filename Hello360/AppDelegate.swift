@@ -65,11 +65,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Deeplink handling
 
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+
+        // report the open URL/Deeplink
+        D360.urls().reportOpen(url, sourceApplication: sourceApplication)
+        
+        // handle the open URL/Deeplink
         handleDeepLink(url: url, sourceApplication: sourceApplication, annotation: annotation)
         return true
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
+        // report the open URL/Deeplink
+        D360.urls().reportOpen(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String)
+        
+        // handle the open URL/Deeplink
         handleDeepLink(url: url, sourceApplication: nil, annotation: nil, options: options)
         return true
     }
