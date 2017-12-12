@@ -61,9 +61,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         D360.push().handleNotification(userInfo, fetchCompletionHandler: completionHandler)
     }
+
+    // MARK: Deeplink handling
+
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        handleDeepLink(url: url, sourceApplication: sourceApplication, annotation: annotation)
+        return true
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
+        handleDeepLink(url: url, sourceApplication: nil, annotation: nil, options: options)
+        return true
+    }
 }
 
 // MARK: - User Notifications
+
 @available(iOS 10, *)
 extension AppDelegate: UNUserNotificationCenterDelegate {
     

@@ -30,6 +30,30 @@ extension AppDelegate {
             }
         }
     }
+
+    // Sample function that simply displays the received deeplink
+    func handleDeepLink(url: URL, sourceApplication: String?, annotation: Any? = nil, options: [UIApplicationOpenURLOptionsKey: Any]? = nil) {
+
+        var source = ""
+        if let sourceApplication = sourceApplication {
+            source = sourceApplication
+        }
+
+        if let options = options {
+            source = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String
+        }
+        
+        let message = """
+                URL: \(url)
+                Source: \(source)
+                Annotation: \(annotation ?? "-")
+                """
+        let alertController = UIAlertController(title: "Deeplink received", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+
+        window!.rootViewController!.present(alertController, animated: true)
+
+    }
 }
 
 // MARK: - Style
