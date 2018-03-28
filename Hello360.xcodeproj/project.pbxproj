@@ -21,11 +21,8 @@
 		8A8E92741FC5C6A900CA15F2 /* Hello360RichNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A8E926D1FC5C6A900CA15F2 /* Hello360RichNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8AD899401FCC546A00E7809E /* AppDelegate+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD8993F1FCC546A00E7809E /* AppDelegate+Helpers.swift */; };
 		8AE8E3E61FCFFE7C00B01686 /* D360Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E51FCFFE6800B01686 /* D360Kit.framework */; };
-		8AE8E3E71FCFFE7C00B01686 /* D360Kit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E51FCFFE6800B01686 /* D360Kit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8AE8E3E81FCFFE7C00B01686 /* D360TesterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E41FCFFE6800B01686 /* D360TesterKit.framework */; };
-		8AE8E3E91FCFFE7C00B01686 /* D360TesterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E41FCFFE6800B01686 /* D360TesterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8AE8E3EA1FCFFEF200B01686 /* D360KitExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8E3E31FCFFE6800B01686 /* D360KitExtension.framework */; };
-		8AE8E3EB1FCFFF5F00B01686 /* D360KitExtension.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AE8E3E31FCFFE6800B01686 /* D360KitExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,24 +47,12 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AAF96461FC5D8690027B42B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8AE8E3EB1FCFFF5F00B01686 /* D360KitExtension.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8AEDE8781FBD84A8007BEDCE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8AE8E3E71FCFFE7C00B01686 /* D360Kit.framework in Embed Frameworks */,
-				8AE8E3E91FCFFE7C00B01686 /* D360TesterKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +207,7 @@
 				8A3D64DB1FBB0346008D87C5 /* Resources */,
 				8AEDE8781FBD84A8007BEDCE /* Embed Frameworks */,
 				8A8E92781FC5C6A900CA15F2 /* Embed App Extensions */,
+				8A40063A206B753D0030A7EE /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -240,7 +226,6 @@
 				8A8E92691FC5C6A900CA15F2 /* Sources */,
 				8A8E926A1FC5C6A900CA15F2 /* Frameworks */,
 				8A8E926B1FC5C6A900CA15F2 /* Resources */,
-				8AAF96461FC5D8690027B42B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -317,6 +302,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A40063A206B753D0030A7EE /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/D360Kit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/D360KitExtension.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/D360TesterKit.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A3D64D91FBB0346008D87C5 /* Sources */ = {
